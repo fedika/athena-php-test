@@ -1,0 +1,17 @@
+# behat.yml
+default:
+    extensions:
+        Tonic\Behat\ParallelScenarioExtension: ~
+        Athena\Behat\BootstrapFileLoader:
+            bootstrap_path: "/opt/athena/bootstrap.php"
+
+        Athena\Event\Proxy\BehatProxyExtension: ~
+
+    suites:
+        default:
+            filters:
+              tags: registration
+            paths:
+                - %paths.base%/bdd/features
+            contexts:
+                - Tests\bdd\contexts\RegistrationContext

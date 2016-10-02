@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+<head>
+    <title>Test Automation Report</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <style type="text/css">
+        pre {
+            word-break: keep-all !important;
+            word-wrap: normal !important;
+            overflow-x: scroll !important;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <header class="page-header">
+
+                            <h1>default <small>1 scenarios (1 passed)</small></h1>
+            
+            <p>
+                Total execution time took 24.855 seconds.
+            </p>
+
+            <p>
+                <small>
+                                        <a href="javascript:void(0)"
+                       data-show-msg="Show Passed Features (1)"
+                       data-hide-msg="Hide Passed Features (1)"
+                       data-target="section.passed-feature"
+                       class="btn btn-success feature-toggle"
+                    >
+                        Show Passed Features (1)
+                    </a>
+                    
+                                    </small>
+            </p>
+        </header>
+
+        
+        
+            <section class="accordion panel panel-default passed-feature" style="display:none">
+                <div class="panel-heading feature-heading">
+                    Feature: Registration. 
+                    <div class="tags">
+                                                    <span class="label label-info">@registration</span>
+                                            </div>
+                </div>
+                <div class="panel-body" style="display: none">
+                                            <section class="panel panel-default test-execution">
+                            <div class="panel-heading">Scenario:  Line #16 <small>(21.324 s)</small>
+                                <div class="tags">
+                                                                                                                                                                                                        <span class="label label-info">@parallel-scenario</span>
+                                                                    </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+
+                                                                        <div class="col-md-8">
+                                        <ul class="list-group">
+                                                                                            <li  class="step-item test-execution-item list-group-item"             data-screenshot="./athenaimg_57f0c0780102c_59.jpg"
+    >
+
+                                                    Given I am in registration page
+
+                                                    
+                                                    
+                                                                                                            <span class="badge"><span class="glyphicon glyphicon-picture"></span></span>
+                                                    
+                                                                                                    </li>
+
+                                                                                                                                            <li  class="step-item test-execution-item list-group-item"             data-screenshot="./athenaimg_57f0c0788ac94_59.jpg"
+    >
+
+                                                    And I input email qatesting@yahoo.com
+
+                                                    
+                                                    
+                                                                                                            <span class="badge"><span class="glyphicon glyphicon-picture"></span></span>
+                                                    
+                                                                                                    </li>
+
+                                                                                                                                            <li  class="step-item test-execution-item list-group-item"             data-screenshot="./athenaimg_57f0c078ee18b_59.jpg"
+    >
+
+                                                    And I input password testing123
+
+                                                    
+                                                    
+                                                                                                            <span class="badge"><span class="glyphicon glyphicon-picture"></span></span>
+                                                    
+                                                                                                    </li>
+
+                                                                                                                                            <li  class="step-item test-execution-item list-group-item"             data-screenshot="./athenaimg_57f0c07976f42_59.jpg"
+    >
+
+                                                    And I re-input password testing123
+
+                                                    
+                                                    
+                                                                                                            <span class="badge"><span class="glyphicon glyphicon-picture"></span></span>
+                                                    
+                                                                                                    </li>
+
+                                                                                                                                            <li  class="step-item test-execution-item list-group-item"             data-screenshot="./athenaimg_57f0c07fc2400_59.jpg"
+    >
+
+                                                    And I click user acceptance
+
+                                                    
+                                                    
+                                                                                                            <span class="badge"><span class="glyphicon glyphicon-picture"></span></span>
+                                                    
+                                                                                                    </li>
+
+                                                                                                                                            <li  class="step-item test-execution-item list-group-item"             data-screenshot="./athenaimg_57f0c0831bfeb_59.jpg"
+    >
+
+                                                    When I click submit
+
+                                                    
+                                                    
+                                                                                                            <span class="badge"><span class="glyphicon glyphicon-picture"></span></span>
+                                                    
+                                                                                                    </li>
+
+                                                                                                                                            <li  class="step-item test-execution-item list-group-item"             data-screenshot="./athenaimg_57f0c0835a371_59.jpg"
+    >
+
+                                                    Then I register successfully
+
+                                                    
+                                                    
+                                                                                                            <span class="badge"><span class="glyphicon glyphicon-picture"></span></span>
+                                                    
+                                                                                                    </li>
+
+                                                                                            
+                                                                                    </ul>
+                                    </div>
+
+                                                                        <div class="col-md-4">
+                                        <div class="detail-screenshot">
+                                            Move your mouse over an action to see the screenshot. (Screenshot was taken after the action)
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                        </section>
+                                    </div>
+
+            </section>
+            </div>
+
+</body>
+</html>
+
+
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+<script>
+    $(function () {
+        $(".test-execution-item-action").each(function () {
+            this.innerHTML = this.innerHTML.replace(/https?:\/\/[^ ]+/, function (match) {
+                return "<a href=\"" + match + "\" target=\"_blank\">" + match + "</a>"
+            })
+        });
+
+        $(".test-execution-item").on("mouseenter", function (ev) {
+
+
+            $item = $(this);
+            $element = $item.parents(".test-execution");
+            $screenshotArea = $element.find(".detail-screenshot");
+            $screenshotArea.text("");
+            $screenshotArea.children().remove();
+
+
+            if ($item.attr("data-screenshot")) {
+                $screenshotArea.append('<div class="overlay-contents" style="height: 300px; overflow: hidden; margin-bottom: 15px;"><a href="' + $item.attr("data-screenshot") + '"><img src="' + $item.attr("data-screenshot") + '" style="max-width: 100%; "/></a></div>');
+            } else if ($item.attr("data-httpcall")) {
+
+                $screenshotArea.append("<div class=\"overlay-contents\">" + $item.find(".detailed-httpcall").html() + "</div>");
+            } else {
+                $screenshotArea.text("no screenshot/http log");
+            }
+        });
+
+        $(".test-execution-item").on("click", function (ev) {
+
+            $item = $(this);
+            var $modalArea = $("#modal-body");
+            if ($item.attr("data-screenshot")) {
+                $modalArea.html('<div class="overlay-contents" style="height: 300px; overflow: hidden; margin-bottom: 15px;"><a href="' + $item.attr("data-screenshot") + '"><img src="' + $item.attr("data-screenshot") + '" style="max-width: 100%; "/></a></div>');
+            } else if ($item.attr("data-httpcall")) {
+                $modalArea.html("<div class=\"overlay-contents\">" + $item.find(".detailed-httpcall").html() + "</div>");
+            } else {
+                return;
+            }
+
+            $("#modal").modal();
+        });
+
+        $(".feature-toggle").click(function(){
+            var $this   = $(this);
+            var $target = $($this.attr('data-target'));
+
+            $target.toggle(function(){
+                if ($target.is(":visible")) {
+                    $this.text($this.attr('data-hide-msg'));
+                } else {
+                    $this.text($this.attr('data-show-msg'));
+                }
+            });
+        });
+
+        $(".toggle-children").click(function(event){
+            event.stopPropagation();
+            var $button = $(this);
+            var $target = $(this).parent().nextUntil('.step-item');
+
+            $target.toggleClass("hidden", function(){
+                if ($target.is(':visible')) {
+                    $button.html('<span class="glyphicon glyphicon-minus"></span>');
+                } else {
+                    $button.html('<span class="glyphicon glyphicon-plus"></span>');
+                }
+            });
+        });
+
+        $(".accordion").accordion({
+            active: 1,
+            collapsible: true,
+            header: "div.feature-heading",
+            heightStyle: "content"
+        });
+    });
+</script>
+
+<!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Details</h4>
+            </div>
+            <div class="modal-body" id="modal-body">
+
+            </div>
+        </div>
+    </div>
+</div>
